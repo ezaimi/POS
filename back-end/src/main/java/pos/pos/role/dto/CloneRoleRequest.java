@@ -2,18 +2,10 @@ package pos.pos.role.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class CreateRoleRequest {
+@Data
+public class CloneRoleRequest {
 
     @NotBlank(message = "Role name is required")
     @Size(max = 100, message = "Role name must be at most 100 characters")
